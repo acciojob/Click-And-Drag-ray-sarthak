@@ -5,10 +5,19 @@ items.forEach((item)=>{
 	item.setAttribute("draggable","true")
 	
 })
+// items.forEach((item)=>{
+// 	item.addEventListener("dragstart",(e)=>{
+		
+// 		let target1=e.target;
+		
+// 	})
+// })
 items.forEach((item)=>{
-	item.addEventListener("dragend",(e)=>{
+	item.addEventListener("dragover",(e)=>{
+		e.preventDefault();
 		let target=e.target;
-		console.log(target);
+		
 	})
 })
+
 
